@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consent for SMS Notifications</title>
 
+    <!-- Link to Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset some default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply Poppins font to the entire page */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 100px; /* Adjusted to make space for the fixed navbar */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            height: 100px;
+            background-color: #4CAF50;
+            position: fixed; /* Fixed positioning to stick at the top */
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000; /* Ensure it stays above other content */
+        }
+
+        .navbar h1 {
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #45a049;
+        }
+
+        /* Main content styling */
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            margin-top: 100px; /* Add 100px margin on top of the container */
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <h1>sms</h1>
+        <a href="#consent">Consent</a>
+        <a href="#about">About</a>
+    </div>
+
+    <!-- Consent Form Section -->
+    <div class="container" id="consent">
+        <h1>Consent for SMS Notifications</h1>
+        <p>By submitting your phone number, you consent to receive SMS messages from this service. Your data will be handled with care and only used for the purpose of sending notifications as described.</p>
+        <p>If you have any questions about how your data will be used, please review our <a href="#" target="_blank">Privacy Policy</a>.</p>
+        <a href="https://darrellhubbardportfolio.github.io/twilio-consent-form-for-sms-testing/consent-page" class="cta-button">Confirm Consent</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Project Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
