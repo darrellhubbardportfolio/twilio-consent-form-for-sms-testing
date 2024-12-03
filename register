@@ -141,8 +141,9 @@
     <!-- Navbar -->
     <div class="navbar">
         <h1>sms</h1>
-        <a href="#register">Register</a>
-        <a href="#about">About</a>
+        <a href="./index.html">Home</a>
+        <a href="./features.html">Features</a>
+        <a href="./contact.html">Contact</a>
     </div>
 
     <!-- Registration Form -->
