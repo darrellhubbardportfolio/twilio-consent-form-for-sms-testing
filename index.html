@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consent for SMS Notifications</title>
-
-    <!-- Link to Google Fonts for Poppins -->
+    <title>Home - OTP & VOIP Testing Solutions</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
-        /* Reset some default styling */
+        /* Reset and shared styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Apply Poppins font to the entire page */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             align-items: center;
             min-height: 100vh;
-            padding-top: 100px; /* Adjusted to make space for the fixed navbar */
+            padding-top: 100px; /* Adjust for fixed navbar */
         }
 
-        /* Navbar Styling */
+        /* Navbar styles */
         .navbar {
             width: 100%;
             height: 100px;
             background-color: #4CAF50;
-            position: fixed; /* Fixed positioning to stick at the top */
+            position: fixed;
             top: 0;
             left: 0;
             display: flex;
@@ -41,7 +36,7 @@
             align-items: center;
             padding: 0 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000; /* Ensure it stays above other content */
+            z-index: 1000;
         }
 
         .navbar h1 {
@@ -62,28 +57,28 @@
             background-color: #45a049;
         }
 
-        /* Main content styling */
+        /* Landing page container */
         .container {
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            max-width: 600px;
+            padding: 40px;
+            max-width: 800px;
             width: 100%;
             text-align: center;
-            margin-top: 100px; /* Add 100px margin on top of the container */
+            margin-top: 50px;
         }
 
         h1 {
             color: #333;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
         p {
             color: #555;
-            font-size: 1rem;
-            line-height: 1.6;
+            font-size: 1.2rem;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
 
@@ -91,12 +86,14 @@
             background-color: #4CAF50;
             color: white;
             font-size: 1.2rem;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
             margin-top: 20px;
+            border: none;
+            cursor: pointer;
             transition: background-color 0.3s ease;
+            display: inline-block;
         }
 
         .cta-button:hover {
@@ -120,24 +117,32 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Section -->
+    <!-- Navbar -->
     <div class="navbar">
         <h1>sms</h1>
-        <a href="#consent">Consent</a>
-        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <!-- Consent Form Section -->
-    <div class="container" id="consent">
-        <h1>Consent for SMS Notifications</h1>
-        <p>By submitting your phone number, you consent to receive SMS messages from this service. Your data will be handled with care and only used for the purpose of sending notifications as described.</p>
-        <p>If you have any questions about how your data will be used, please review our <a href="#" target="_blank">Privacy Policy</a>.</p>
-        <a href="https://your-username.github.io/consent-page" class="cta-button">Confirm Consent</a>
+    <!-- Landing Page Content -->
+    <div class="container" id="features">
+        <h1>Welcome to SMS Test Solutions</h1>
+        <p>
+            We specialize in providing tools and services for testing OTP (One-Time Password) functionality in applications, 
+            including robust solutions for two-factor authentication (2FA). Whether you're building apps that require 
+            secure user verification or looking to integrate quick and affordable VOIP message programs, our platform has 
+            you covered.
+        </p>
+        <p>
+            Our mission is to empower developers with efficient, cost-effective solutions to enhance their applications' 
+            security and communication capabilities. Start your journey with us today!
+        </p>
+        <a href="#register" class="cta-button">Get Started</a>
     </div>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Project Name. All rights reserved.</p>
+        <p>&copy; 2024 SMS Test Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
